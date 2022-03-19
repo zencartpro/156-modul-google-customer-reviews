@@ -1,0 +1,53 @@
+Google Kundenrezensionen 2.1.0 für Zen Cart 1.5.6 deutsch
+
+Dieses Modul ermöglicht die einfache Integration von Google Kundenrezensionen, ohne dass Javascripts manuell im Shop eingefügt/angepasst werden müssen.
+
+Google Kundenrezensionen sind ein Programm innerhalb des Google Merchant Centers, alle Infos dazu hier:
+https://support.google.com/merchants/answer/7124322?hl=de
+
+Die Kunden haben durch die Umfrage von Google Kundenrezensionen die Möglichkeit, den Kaufvorgang im Shop zu bewerten. 
+Wenn ein Kunde der Teilnahme zustimmt, wird ihm nach Auslieferung seiner Bestellung von Google eine Umfrage gesendet. 
+Die Umfrage soll ihm Gelegenheit geben, seine Kauferfahrung insgesamt, aber nicht den gekauften Artikel zu bewerten.
+
+Auf der Checkout Success Seite erscheint eine Bewertungsanfrage.
+Stimmt der Kunde zu erhält er nach einem via Zen Cart Admin einstellbarem Zeitraum ein Mail von Google mit der Bewertungsmöglichkeit.
+Im Shop kann optional ein Siegel mit den Bewertungen angezeigt werden.
+
+Google Kundenrezensionen können zusätzlich zu anderen Bewertungslösungen wie eKomi oder Shopvote genutzt werden, auf der Google Kundenrezensionen Seite erscheinen die Shopbewertungen der anderen berechtigten Anbieter ebenfalls, sobald dort mehr als 150 Bewertungen innerhalb der letzten 12 Monate erreicht wurden.
+
+Das Modul hält sich exakt an die Integrationsvorgaben von hier:
+https://support.google.com/merchants/answer/7106244?hl=de
+
+Voraussetzungen:
+Zen Cart 1.5.6 deutsch
+Google Merchant Center Account
+Teilnahme am Google Kundenrezensionen Programm
+Doctype des Templates im Shop ist HTML5 (ist z.B. im responsive_classic Standardtemplate von 1.5.6 der Fall)
+
+Version 2.1.0
+2019-09-12
+webchills (www.webchills.at)
+
+Übersetzung/Anpassung des Moduls Google Customer Reviews 2.0.1 von Numinix
+https://www.numinix.com/plugins/zen-cart-plugins/marketing/google-customer-reviews-dl-896
+
+Änderungen gegenüber der Numinix Version:
+- Unterstützung der in Zen Cart 1.5.5 verwendeten mehrsprachigen Ländernamen
+- Position des Badge via Admin einstellbar
+- Position des Opt-In Popups via Admin einstellbar
+- Konfiguration komplett auf deutsch
+
+
+INSTALLATION:
+
+Im Ordner NEUE DATEIEN den Ordner DEINADMIN auf den Namen des admin Verzeichnisses umbenennen
+Den Ordner DEINTEMPLATE auf den Namen des im Shop aktiven Templates umbenennen.
+Dann in der vorgegebenen Struktur hochladen, es werden keine bestehenden Dateien überschrieben
+In der Zen Cart Administration auf irgendeinen Menüpunkt clicken, danach ist unter Konfiguration der neue Menüpunkt "Google Kundenrezensionen Konfiguration" vorhanden
+Alle Einstellungsmöglichkeiten sind dort erklärt.
+
+
+DEINSTALLATION:
+
+Alle von diesem Modul hinzugefügten Dateien vom Server löschen
+Inhalt der uninstall.sql im Ordner UNINSTALL kopieren und im Eingabefeld unter Tools > SQL Patches installieren absenden
